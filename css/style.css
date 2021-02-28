@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300;1,400;1,600&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+header .container{
+    width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+    /*etique para no desbordar contenido*/
+    max-width: 100%; /*se adapta al ancho maximo de las pantallas*/
+}
+
+header .container h1{
+    font-weight: 300;
+    color: #4d6e80;
+}
+header .container .nav ul{
+    padding: 0;
+
+}
+header .container nav ul li{
+    display: inline-block;  
+}
+header .container nav ul li a{
+    padding: 5px 18px;
+    text-decoration: none;
+    transition: .3s;
+    border: 1px solid transparent;
+    font-size: 14px;
+    color: #1f1f1f;
+
+
+    
+}
+header .container nav ul li a :hover{
+    border: 1px solid #4d6e80;;
+}
+header .container nav ul li a.active{
+/* saber en que pagina se encuentra el usuario, estado active cuando no se pase el menu sobre el  botton quede activo*/
+border: 1px solid #b3c8d4;
+}
+
+main {
+    width: 100%;
+    position: relative;
+}
+main #hero{
+    width: 100%;
+    /*padding margenes internas*/
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background:url("../img/fondo.jpg");
+    background-repeat: none;
+    /*ubicacion desde izquierda centrar imagenes en x y*/
+    background-position-x: center;
+    background-position-y: center;
+    /*cubrir todo el contenedor*/
+    background-size: cover;
+
+}
+
+main #hero h2{
+  font-size: 60px;
+  line-height: 72px;
+  color: white;
+  margin-bottom: 0;
+}
+
+/*lineas cerca al texto*/
+main #hero line{
+    position: absolute;
+    height: 1px;
+    background: #a9c0cb;
+    top: 51%;
+}
+main #hero hr{
+    height:0px;
+    width: 10px;
+}
+main #hero p{
+    /*grosor texto*/
+    font-weight: 600px;
+    /*tamaño texto*/
+    font-size: 15px;
+    color: white;
+  }
+
+  main #hero button{
+      background-color: #f49712;
+      border-radius: 40px;
+      font-size: 16px;  
+      color: white;
+      padding: 15px 50px;
+      font-weight: bold;
+      margin-top: 44px;
+      
+  }
+  /*apenas detecte click sobre el boton aclarar boton*/
+  main #hero button:hover{
+    opacity: 0.8;
+  }
+  main #secondSection{
+      text-align: center;
+  }
+  main #secondSection h3{
+        font-weight: 300;
+        color: #4d6e80;
+        font-size: 36px;
+  }
+  main #secondSection p{
+      /*espacio entre lineas del parrafo*/
+      line-height: 30px;
+      color: #7e8487;
+      font-size: 18px;
+      font-weight: 300;
+}
+main #secondSection .row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+   /* background-color: blue;*/
+}
+
+main #secondSection .row .cont-c{
+    width: 238px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+main #secondSection .row .cont-c h4{
+    font-size: 36px;
+    color: white;
+    font-weight: 300;
+    position: absolute;
+    
+}
+
+
+/*tercera seccion*/
+
+
+main #thirdSection{
+    background-color:#f2f2f2;
+    padding-bottom: 74px;
+}
+main #thirdSection h5{
+    font-weight: 300;
+    color: #4d6e80;
+    font-size: 36px;
+    text-align: center;
+    margin: 58px 28px ;
+    padding-top: 50px;
+}
+main #thirdSection p{
+     /*espacio entre lineas del parrafo*/
+     line-height: 30px;
+     color: #7e8487;
+     font-size: 18px;
+     font-weight: 300;
+     text-align: center;
+}
+main #thirdSection .row{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 34px;
+    /*background-color: red;*/      
+}
+main #thirdSection .row .cont-c {
+    width: 236px;
+    height: 168px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    
+}     
+
+main #thirdSection .row .cont-c:nth-child(1)
+{
+    background: url("../img/a.jpg");
+    /*define tamaño imagenes de fondo (cover - contain)*/
+    background-size: cover;
+}
+
+main #thirdSection .row .cont-c:nth-child(2)
+{
+    background: url("../img/b.jpg");
+    /*define tamaño imagenes de fondo (cover - contain)*/
+    background-size: cover;
+
+}
+main #thirdSection .row .cont-c:nth-child(3)
+{
+    background: url("../img/c.jpg");
+        /*define tamaño imagenes de fondo (cover - contain)*/
+    background-size: cover;
+
+}
+
+main #thirdSection button {
+    background-color: #f49712;
+    border-radius: 40px;
+    font-size: 16px;  
+    color: white;
+    padding: 15px 50px;
+    font-weight: bold;
+    margin: 40px auto;    
+    display: block;
+}
+/*section four*/
+main #fourSection h6{
+
+    font-weight: 300;
+    color: #4d6e80;
+    font-size: 36px;
+    text-align: center;
+    margin: 58px 28px ;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+main #fourSection p{
+    line-height: 30px;
+     color: #7e8487;
+     font-size: 18px;
+     font-weight: 300;
+     text-align: center;
+}
+main #fourSection .cont-a{
+   /* background-color: blue;*/
+    display: flex;
+    justify-content: space-around;
+    margin-top: 34px; 
+}
+
+main #fourSection .nameExpert{
+color: #4e7b8b;
+text-align: center;
+padding-top: 25px;
+}
+main #fourSection .button
+{
+    /*centrado horizontal*/
+    display: flex;
+    justify-content: center;
+
+}
+main #fourSection .button button{
+    padding: 5px 18px;
+    margin: 15px 5px;
+    text-decoration: none;
+    transition: .3s;
+    border: 1px solid transparent;
+    font-size: 14px;
+    background-color: #f49712;;
+    width: 7%;
+    height: 5%;
+ 
+}
+main #fourSection .button button :hover{
+    border: 1px solid #4d6e80;;
+}
+main #fourSection .button button.active{
+/* saber en que pagina se encuentra el usuario, estado active cuando no se pase el menu sobre el  botton quede activo*/
+border: 1px solid #b3c8d4;
+}
+
+
+footer #fiveSection{
+    width: auto;
+    /*padding margenes internas*/
+    padding-top: 70px;
+    padding-bottom: 70px;
+    text-align: center;
+    background:url("../img/imagenFondo.jpg");
+    background-repeat: none;
+    /*ubicacion desde izquierda centrar imagenes en x y*/
+    background-position-x: center;
+    background-position-y: center;
+    /*cubrir todo el contenedor*/
+    background-size: cover;
+}
+footer #fiveSection h7{
+    font-size: 60px;
+    line-height: 72px;
+    color: white;
+    margin-bottom: 0;
+}
+
+
+footer #fiveSection p{
+    /*espacio entre lineas del parrafo*/
+    line-height: 30px;
+    color:white;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+footer #fiveSection .row{
+    display: flex;
+    justify-content: space-around;
+    margin: 34px 200px;
+      
+}
+footer #fiveSection .row .cont-c {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 10px auto;  
+    padding-top: 10px 
+} 
+
+footer #fiveSection .row .cont-c  a{
+    color: white;
+    font-size: 50px;
+    }
+
+
+
+
+footer #texto{
+text-align: center;
+text-transform: uppercase;
+color:#7e8487 ;
+padding: 10px 10px;
+}
+
+
+
+/*tablet*/
+
+/*SMARTPHONE swgun tamaños de pantalla rangos entre antalla mas pequeña a mas grande*/
+
+@media screen and (max-width:500px) and (min-width: 300px){
+    
+    main #hero h2 {
+        font-size: 30px;
+        line-height: 34px;
+    }
+    main #secondSection .row{
+        display: block;
+    }
+    
+    main #secondSection .row .cont-c{
+        margin: 20px auto;
+    }
+    /*adaptando menu a tamaño de escritorio*/
+    main .container nav ul{
+        width: 80%;
+        margin: 0 auto;
+        
+    }
+    header .container nav ul li{
+        /*items uno bajo el otro*/
+        display: block;
+        margin-bottom: 10px;
+
+    }
+    header .container nav ul li a{
+        /*items uno bajo el otro*/
+        display: block;
+    
+    }
+}
